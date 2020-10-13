@@ -1,0 +1,192 @@
+/*导航框*/
+.up{
+    /* position:fixed; */
+	width: 100%;
+	height: 90px;
+    /* background-color:#232424; */
+    background-color: #584f60;
+	align : center;
+}
+
+/*导航栏里的logol*/
+.img1{
+    position:absolute;
+	/* margin: 25px 400px; */
+	width:110px;
+    height:35px ;
+    top: 25px;
+    left: 30%;
+}
+/*body设置*/
+body{
+    margin:0px;
+    background-color: #EEEEEE;
+}
+
+
+/*导航按钮*/
+.my-btn {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    /* background-color: #009688; */
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/*导航按钮圆角*/
+.my-btn-radius {
+    border-radius: 100px;
+}
+
+/*导航栏课程内容按钮*/
+.btn-default{
+    background-color: #494050;
+    color: aliceblue;
+    position:absolute;
+    /* margin: 20px 1000px; */
+    width: 120px;
+    height: 50px;
+    top: 20px;
+    left: 65%;
+}
+
+/*导航栏发现精选按钮*/
+.btn-default1{
+    background-color: #494050;
+    color: aliceblue;
+    position:absolute;
+    /* margin: 20px 1000px; */
+    width: 120px;
+    height: 50px;
+    top: 20px;
+    left: 55%;
+}
+
+/*左边边框栏*/
+.left_side{
+    position: absolute;
+    background-color:#EEEEEE;
+    height:100%;
+    width:30%;
+    float:left;
+}
+
+/*右边框栏*/
+.right_side{
+    background-color:#EEEEEE;
+    height:1100px;
+    width:250px;
+    float:right;
+}
+
+/*工具框栏*/
+.tool_side{
+    background-color:#EEEEEE;
+    height:2200px;
+    width:250px;
+    float:right;
+}
+
+.title-wrapper
+{
+    text-align: center;
+}
+
+/*课程分类字体样式设置*/
+.title-wrapper h2 {
+    position: absolute;
+    color: #24c789;
+    /* width: 1400px;
+    line-height:600%; */
+    font-weight : 900;
+    top: 17%;
+    left: 46%;
+}
+
+.title-wrapper h3 {
+    position: absolute;
+    color: #24c789;
+    /* width: 1400px;
+    line-height:600%; */
+    font-weight : 900;
+    top: 30px;
+    left: 40%;
+}
+
+/*中间字体样式*/
+.title-wrapper p {
+    position: absolute;
+    color: #b8b3b3;
+    font-weight : 900; 
+    top: 25%;
+    left: 42%;
+}
+
+/*课程图片设置*/
+.photo{
+    position: absolute;
+    width: 15%; 
+    height: 20%; 
+    opacity: 1; /* 图片漂白程度 */
+    filter:alpha(opacity=40); /*  IE8 及其更早版本 */
+    -webkit-mask:-webkit-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0.5)); 
+}
+.bantou{
+    position: absolute;
+    width: 15%; 
+    height: 20%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.photo_ch
+{
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/*页脚*/
+.down{
+    background-color:#FFA500;
+    clear:both;
+    text-align:center;
+}
+
+/*text照片1*/
+.img2{
+    position:absolute;
+	/* margin: 25px 400px; */
+	width:80%;
+    height:450px ;
+}
+
+.mask {
+    position: absolute;
+    width: 80%;
+    height: 200px;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.4)),color-stop(.25,rgba(0,0,0,0.25)),color-stop(.75,rgba(0,0,0,0.2)),to(rgba(0,0,0,0.4)));
+    background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.2) 25%,rgba(0,0,0,0.2) 75%,rgba(0,0,0,0.4) 100%);
+    background-image: -moz-linear-gradient(bottom,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.2) 25%,rgba(0,0,0,0.2) 75%,rgba(0,0,0,0.4) 100%);
+    background-image: -o-linear-gradient(bottom,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.2) 25%,rgba(0,0,0,0.2) 75%,rgba(0,0,0,0.4) 100%);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.2) 25%,rgba(0,0,0,0.2) 75%,rgba(0,0,0,0.4) 100%);
+}
+
+.name {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.char{
+    font-size: 25px;
+}

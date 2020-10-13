@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>登录</title>
+   <link rel="stylesheet" type="text/css" href="login.css" />
+</head>
+<body>
+   <script>(function(){
+      var height = window.innerHeight,
+        width = document.body.clientWidth;
+      if(typeof height != 'number'){
+        height = document.body.clientHeight;
+      }
+      var ratio = height/width;
+      document.write('<style>.video-head-wrap{padding-bottom:' + ratio*100 + '% !important;}.body-wrap{padding-top:' + ratio*100 + '%;}</style>');
+      //背景视频为1280*720
+      if(ratio>(720/1280)){
+        var leftOffset = -(height*1280/720 - width)/2;
+        document.write('<style>#video-bg{height:100%;margin-left:'+leftOffset+'px;}</style>');
+      }else{
+        var topOffset = -(width*720/1280 - height)/2;
+        document.write('<style>#video-bg{width:100%;margin-top:'+topOffset+'px;}</style>');
+      }
+    })();</script>
+   <div class="video-wrap">
+      <video id="video-bg" src="5s.mp4" muted="" autoplay="" loop=""></video>
+   </div>
+   <div class="body-wrap">
+      <div class="keep-header">
+         <div class="head-left">
+            <a href="/"><img src="https://staticweb.keepcdn.com/staticShow/images/logo-16fc21eba7.png"></a>
+         </div>
+         <div class="head-right">
+            <a href="login.html">登录</a>
+            <a href="resign.html">新用户注册</a>
+         </div>
+      </div>
+      <div class="login-wrap">
+         <div class="login-title">登录</div>
+         <div >
+            <input class="login-body" id="peoplename" type="name" placeholder="用户名" required="" >
+         </div>
+         <div>
+            <input class="login-body" id="Password" type="password" placeholder="密码" required="">
+         </div>
+         <div>
+            <input class="login-body" id="submit" style="background:rgb(200, 229, 231)" type="submit" value="登录">
+         </div>
+      </div>
+   </div>
+</body>
+</html>

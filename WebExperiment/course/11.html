@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Layui</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="mycss-js/css/layui.css"  media="all">
+  <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+<body>
+
+    <div id="demo2" style="margin-top: 100px; margin-left: 30%; "></div>
+
+
+<script src="mycss-js/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['laypage', 'layer'], function(){
+      var laypage = layui.laypage
+      ,layer = layui.layer;
+      
+      //自定义样式
+      laypage.render({
+        elem: 'demo2'
+        ,count: 100
+        ,theme: '#1E9FFF'
+      });
+      
+    });
+    </script>
+
+</body>
+</html>

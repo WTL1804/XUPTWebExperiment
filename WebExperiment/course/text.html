@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="/mycss-js/css/layui.css"  media="all">
+</head>
+<body>
+    <div id="container" >
+        <div id="header" class="up">
+            <img class="img1" src="res/logal.png" />
+            <a href="http://127.0.0.1:5500/text.html">
+                <button type="button" class="btn-default1 my-btn my-btn-radius">发现精选</button>
+            </a>
+            <a href="http://127.0.0.1:5500/courseMain.html">
+                <button type="button" class="btn-default my-btn my-btn-radius">课程内容</button>
+            </a>
+        </div>
+        <div class = "photos" >
+            <div style = "width: 850px;height: 1500px;position: absolute;margin-left: 285px;"></div>
+        </div>
+        <div style = "width: 59%;height: 270%; background-color: white; position: absolute;margin-left: 20%;">
+            <div class="title-wrapper">
+                <h3> 课程分类-苏菲挑战赛练习</h3>
+                <p style="top: 80px; left: 41%;">苏菲挑战赛练习-四门课程</p>
+            </div>
+            <a href="http://127.0.0.1:5500/courseMain.html">
+                <div>
+                    <img class="img2" style="top: 100px; left:10%;" src="res/girl1.jpg">
+                    <div class="mask" style="top: 350px; left:10%;">
+                        <p class="name" style="left: 1.5rem; top: 2rem; font-size: 1.6rem;">生理期有氧减脂</p>
+                        <p class="name" style="left: 1.5rem; top: 6rem; font-size: 1.0rem;">一节 全身</p>
+                        <p class="name" style="left: 1.5rem; top: 8rem; font-size: 1.0rem; color: black;">8224995人训练</p>
+                    </div>
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5500/courseMain.html">
+                <div>
+                    <img class="img2" style ="top: 600px; left:10%;" src="res/girl2.jpg">
+                    <div class="mask" style="top: 850px; left:10%;">
+                        <p class="name" style="left: 1.5rem; top: 2rem; font-size: 1.6rem;">生理期舒缓放松</p>
+                        <p class="name" style="left: 1.5rem; top: 6rem; font-size: 1.0rem;">一节 全身</p>
+                        <p class="name" style="left: 1.5rem; top: 8rem; font-size: 1.0rem; color: black;">627364人训练</p>
+                    </div>
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5500/courseMain.html">
+                <div>
+                    <img class="img2" style="top: 1100px; left:10%;" src="res/girl3.jpg">
+                    <div class="mask" style="top: 1350px; left:10%;">
+                        <p class="name" style="left: 1.5rem; top: 2rem; font-size: 1.6rem;">瑜伽.晨间唤醒</p>
+                        <p class="name" style="left: 1.5rem; top: 6rem; font-size: 1.0rem;">一节 全身</p>
+                        <p class="name" style="left: 1.5rem; top: 8rem; font-size: 1.0rem; color: black;">1028312人训练</p>
+                    </div>
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5500/courseMain.html">
+                <div>
+                    <img class="img2" style="top: 1600px; left:10%;" src="res/girl4.jpg">
+                    <div class="mask" style="top: 1850px; left:10%;">
+                        <p class="name" style="left: 1.5rem; top: 2rem; font-size: 1.6rem;">瑜伽.睡前舒缓</p>
+                        <p class="name" style="left: 1.5rem; top: 6rem; font-size: 1.0rem;">一节 全身</p>
+                        <p class="name" style="left: 1.5rem; top: 8rem; font-size: 1.0rem; color: black;">123人训练</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="content" class="tool_side"></div> 
+        <div id="demo2" style="position:absolute;  margin-top: 2100px; margin-left: 33%;"></div>
+        <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+            版权 © 亮亮小分队</div>  
+    </div>
+    <script src="mycss-js/layui.js" charset="utf-8"></script>
+    <script>
+        layui.use(['laypage', 'layer'], function(){
+            var laypage = layui.laypage
+            ,layer = layui.layer;
+            //自定义样式
+            laypage.render({
+                elem: 'demo2'
+                ,count: 100
+                ,theme: '#1E9FFF'
+          });
+        });
+    </script>
+</body>
+</html>
