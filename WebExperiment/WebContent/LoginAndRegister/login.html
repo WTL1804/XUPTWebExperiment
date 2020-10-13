@@ -23,7 +23,12 @@
         var topOffset = -(width*720/1280 - height)/2;
         document.write('<style>#video-bg{width:100%;margin-top:'+topOffset+'px;}</style>');
       }
-    })();</script>
+    })();
+   
+   function logins() {
+	   window.location.href="../Community/test.html";
+   }
+   </script>
    <div class="video-wrap">
       <video id="video-bg" src="5s.mp4" muted="" autoplay="" loop=""></video>
    </div>
@@ -46,7 +51,7 @@
             <input class="login-body" id="Password" type="password" placeholder="密码" required="">
          </div>
          <div>
-            <input class="login-body" id="submit" style="background:rgb(200, 229, 231)" type="submit" value="登录">
+            <input class="login-body" id="submit" style="background:rgb(200, 229, 231)" type="button" value="登录" onclick = 'logins()'>
          </div>
       </div>
    </div>

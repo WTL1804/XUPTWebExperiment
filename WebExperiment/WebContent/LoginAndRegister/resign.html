@@ -24,6 +24,38 @@
         document.write('<style>#video-bg{width:100%;margin-top:'+topOffset+'px;}</style>');
       }
     })();</script>
+    <script>
+    function tests() {
+ //账号
+ //正则
+    	var userName = document.getElementById('peoplename').value;
+  		var chinese = /[\u4E00-\u9FA5]/;
+  		var num = /^[A-Za-z0-9]+$/;
+    	if (userName.length > 16 || userName.length < 5) {
+    		alert('账号长度不能大于16或小于5');
+    		return ;
+    	} else if (chinese.test(userName) == 1) {
+    		alert('不能有汉字');
+    		return;
+    	} else if (num.test(userName)  == 0) {
+    		alert('仅支持数字和字母');
+    		return;
+    	}
+  //密码
+ 		var passWord = document.getElementById('PassWord').value;
+    	alert(passWord);
+  		var num = /^[A-Za-z0-9]+$/;
+    	if (passWord.length > 16 || passWord.length < 5) {
+    		alert('密码长度不能大于16或小于5');
+    		return;
+    	} else if (num.test(passWord)  == 1) {
+    		alert('必须包含特殊字符');
+    		return;
+    	}
+    	alert('注册成功');
+    	window.location.href="login.html";
+    }
+    </script>
    <div class="video-wrap">
       <video id="video-bg" src="5s.mp4" muted="" autoplay="" loop=""></video>
    </div>
@@ -34,7 +66,7 @@
          </div>
          <div class="head-right">
             <a href="login.html">登录</a>
-            <a href="register.html">新用户注册</a>
+            <a href="resign.html">新用户注册</a>
          </div>
       </div>
       <div class="login-wrap">
@@ -43,7 +75,7 @@
             <input class="login-body" id="peoplename" type="name" placeholder="用户名" required="" >
          </div>
          <div>
-            <input class="login-body" id="Password" type="password" placeholder="密码" required="">
+            <input class="login-body" id="PassWord" type="password" placeholder="密码" required="">
          </div>
          <div>
             <input class="login-body" id="phonenumber" type="" placeholder="手机号" required="">
@@ -52,7 +84,7 @@
             <input class="login-body" id="email" type="email" placeholder="邮箱" required="">
          </div>
          <div>
-            <input class="login-body" id="submit" style="background:rgb(200, 229, 231)" type="submit" value="登录">
+            <input class="login-body" id="submit" style="background:rgb(200, 229, 231)" onclick = 'tests()' value = '注册' type = button>
          </div>
       </div>
    </div>
